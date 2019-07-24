@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>   
+
+ <head>
+
+  <title>Matriz
+
+</title>
+
+   <script src="matriz.js"></script>
+
+ </head>
+
+<body text=white bgcolor=red>
+    <h1>Matriz</h1>
+    <div>
+        <label for="columnas"></label>
+        <input type="number" placeholder="filas" name="columnas" id="columnas">
+        <br><br>
+        <label for="filas"></label>
+        <input type="number" placeholder="columnas" name="fila" id="columnas">
+        <br><br>
+        <input type="button" value="Generar" id=" producto">
+
+        
+
+    </div>
+
+<h2>matriz ingresadas por el usuario</h2>
+
+<form name="matriza">
+
+A<BR> <input type="text" size="6">
+
+            <input type="text" size="6">
+
+            <input type="text" size="6"><BR>
+
+            <input type="text" size="6">
+
+            <input type="text" size="6">
+
+            <input type="text" size="6"><BR>
+
+            <input type="text" size="6">
+
+            <input type="text" size="6">     
+
+            <input type="text" size="6">
+
+</form>
+
+<form name="matrizb">
+
+B<BR> <input type="text" size="6">
+
+            <input type="text" size="6">
+
+            <input type="text" size="6"><BR>
+
+            <input type="text" size="6">
+
+            <input type="text" size="6">
+
+            <input type="text" size="6"><BR>
+
+            <input type="text" size="6">
+
+            <input type="text" size="6">     
+
+            <input type="text" size="6">
+
+            
+</form>
+
+ 
+  </form>
+  <script>
+      var Vector= [];
+var contador= 0;
+document.getElementById("producto")
+    .addEventListener("click", function() {
+        var Filas = parseInt(document.getElementById("Filas").value);
+        var Columnas = document.getElementById("Columnas").value;
+        for (let i = 0; i < C; i++) {
+            Vector.push(new Array);
+            for (let j = 0; j < F; j++) {
+                cont++;
+                //alert(cont);
+                Vector[i].push(contador);
+            }
+        }
+    })
+function imprimirFilas() {
+    for (let i = 0; i < Vector.length; i++) {
+        console.log(Vector[i]);
+    }
+}
+function imprimirColumnas() {
+    for (let i = 0; i < Vector.length; i++) {
+        for (let j = 0; j < Vector[0].length; j++) {
+            console.log(Vector[j][i]);
+        }
+    
+}
+function imprimirTodo() {
+    console.log(Vector);
+}
+  </script>
+
+ </body>
+
+</html>
